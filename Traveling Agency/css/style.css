@@ -1,0 +1,104 @@
+/* Fontawesome icon */
+@import url(/css/all.min.css);
+/* Variables */
+:root {
+  --color1: #1c7ed6;
+  --color2: #228be6;
+  --text: #495057;
+  --title: #343a40;
+  --white: #fff;
+}
+/* Base styling */
+body {
+  color: var(--text);
+  font-family: "Rubik", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title);
+  font-family: "Open Sans", sans-serif;
+}
+/* Main styling */
+/* Header */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.site-logo {
+  font-weight: 800;
+  color: var(--white);
+}
+
+.btn-header {
+  border: 1px solid var(--white);
+  color: var(--white);
+  transition: 500ms;
+}
+
+.btn-header:hover {
+  color: var(--white);
+  border: 1px solid var(--color1);
+  background: var(--color1);
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: --;
+}
+
+.nav-link.active {
+  color: var(--color1) !important;
+  font-weight: 800;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero::before {
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.2));
+  z-index: 2;
+}
+
+/* .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.carousel-overlay {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.carousel-overlay h1 {
+  color: var(--white);
+  text-align: center;
+  font-size: 3rem;
+}
